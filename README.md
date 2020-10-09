@@ -1,6 +1,6 @@
-# VergeExplorer
+# Sugarchain Explorer
 
-A responsive design Verge (XVG) Cryptocurrency Blockchain Explorer built on top of KoaJS JSON API (NodeJS) backend and VueJS (vue-cli) frontend
+A responsive design Sugarchain (SUGAR) Cryptocurrency Blockchain Explorer built on top of KoaJS JSON API (NodeJS) backend and VueJS (vue-cli) frontend
 
 ## Getting Started
 
@@ -13,7 +13,7 @@ These instructions will get you a copy of the project up and running on your loc
 * NodeJS v10.16.3
 * NPM v6.9.0
 * MongoDB v4.0.12 with Replica Set enabled and configured (required for ACID transactions)
-* Verge Daemon v6.0.2 (Fully Synced) -> verge-6.0.2-x86_64-linux-gnu.tar.gz [https://github.com/vergecurrency/VERGE/releases]
+* Sugarchain Daemon v0.16.3x (Fully Synced) -> sugarchain-0.16.3.34-starboy-x86_64-linux-gnu.tar.gz [https://github.com/sugarchain-project/sugarchain/releases]
 ```
 
 What is not covered here
@@ -30,28 +30,28 @@ A step by step series of examples that tell you how to get a development environ
 Clone the repository
 
 ```
-git clone https://github.com/peengo/vergeexplorer.git
+git clone https://github.com/sugarchain-project/Sugarchain-Explorer.git
 ```
 
 Install npm packages and dependencies
 
 ```
-cd vergeexplorer/server && npm install
+cd Sugarchain-Explorer/server && npm install
 cd ..
 cd client && npm install
 ```
 
-Download & extract from `verge-6.0.2-x86_64-linux-gnu.tar.gz` [https://github.com/vergecurrency/VERGE/releases]
+Download & extract from `sugarchain-0.16.3.34-starboy-x86_64-linux-gnu.tar.gz` [https://github.com/sugarchain-project/sugarchain/releases]
 
-Create a `.VERGE` folder inside your home directory
+Create a `.sugarchain` folder inside your home directory
 
-Copy `VERGE.conf` file to this directory
+Copy the contents of `SUGAR.conf`. Create a new file called `sugarchain.conf` in your `.sugarchain` directory and paste the contents in.
 
 Fill out `rpcuser=` and `rpcpassword=` fields in this file. You decide what this two will be. You will use this values later in `.env` file
 
-Start the Verge Daemon (RPC)
+Start the Sugarchain Daemon (RPC)
 ```
-./verge-6.0.2/bin/verged -daemon
+./sugarchain-0.16.3/bin/verged -daemon
 ```
 
 This will take time to sync the blockchain. Alternatively and advisiably you can download the blockchain to speed up the blockchain syncing process
@@ -96,7 +96,7 @@ db.ios.createIndex({ time: -1, type: -1 }, { background: true })
 
 **Start syncing blockchain to the database**
 
-Do this when the Verge Daemon is running (fully synced) and accepting commands
+Do this when the Sugarchain Daemon is running (fully synced) and accepting commands
 
 inside `server` folder
 ```
