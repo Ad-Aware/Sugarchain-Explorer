@@ -4,7 +4,7 @@ const { MongoClient } = require('mongodb');
 
 const dbConnect = async (database = process.env.DB_NAME) => {
     const client = await MongoClient.connect(
-        `mongodb://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_HOST}:${process.env.DB_PORT}/${database}`,
+        "mongodb://sugarexplorer:sugarexplorer231$@127.0.0.1:27017/blockchain?authSource=blockchain&?retryWrites=false&?readPreference=primaryPreferred",
         { useNewUrlParser: true, replicaSet: 'rs0', poolSize: 10, useUnifiedTopology: true },
     );
 

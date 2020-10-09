@@ -6,7 +6,11 @@ const chaiHttp = require('chai-http');
 
 chai.use(chaiHttp);
 
+<<<<<<< HEAD
+const url = 'http://45.76.245.105';
+=======
 const url = 'http://localhost';
+>>>>>>> 439bb831ecbcc8de82e2ea255c02b46f2114a702
 const port = process.env.PORT;
 
 const app = chai.request(`${url}:${port}`);

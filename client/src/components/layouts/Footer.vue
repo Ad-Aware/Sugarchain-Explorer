@@ -4,7 +4,7 @@
       <v-card>
         <v-card-title class="headline justify-center info">Contact</v-card-title>
         <v-card-text class="text-xs-center py-5">
-          <v-img :src="`${publicPath}contact.png`" alt="contact" />
+          <a href="https://t.me/sugarchain">Telegram</a>
         </v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>
@@ -20,13 +20,13 @@
           This website was built from scratch. Source code is available on
           <a
             alt="GitHub"
-            href="https://github.com/peengo/vergeexplorer"
-          >GitHub</a>. Donations are not necesarry but are greatly appreciated. Donations keep this website online. All donations are non-refundable. To show the support you can also use the Binance exchange referral link below.
+            href="https://github.com/Nugetzrul3/SugarchainExplorer"
+          >GitHub</a>. Donations are not necesarry but are greatly appreciated. Donations keep this website online. All donations are non-refundable. To show support to the original developers you can use their Binance exchange referral link below. If you want to show support for Sugarchain, consider donating to the address below!
         </v-card-text>
-        <v-card-text class="subheading text-xs-center">VERGE ({{ $CURRENCY }})</v-card-text>
+        <v-card-text class="subheading text-xs-center">SUGAR ({{ $CURRENCY }})</v-card-text>
         <v-card-text
           class="text-xs-center monospace success break-all"
-        >DEHYYiNA4fb7h59DGPyrDNNoRRF5ZtMmy9</v-card-text>
+        >sugar1qr3c2c9cqht8jgmyh8h7g6r0dfuztmdeg7nh367</v-card-text>
         <v-card-title class="justify-center">
           <v-img alt="QR Code" :src="qrlink" max-height="256" max-width="256" class="ma-5"></v-img>
         </v-card-title>
@@ -47,18 +47,18 @@
     </v-dialog>
 
     <v-layout justify-center row wrap>
-      <v-btn href="https://vergecurrency.com/" flat round><v-icon left>fas fa-globe</v-icon>VERGE Website</v-btn>
+      <v-btn href="https://sugarchain.org/" flat round><v-icon left>fas fa-globe</v-icon>Sugarchain Website</v-btn>
       <v-btn flat round @click.stop="contactDialog = true">
         <v-icon left small>fas fa-home</v-icon>Contact Us
       </v-btn>
       <v-btn flat round @click.stop="donationsDialog = true">
         <v-icon left small>fas fa-hand-holding-usd</v-icon>Donations
       </v-btn>
-      <v-btn href="https://github.com/peengo/vergeexplorer" flat round>
+      <v-btn href="https://github.com/Nugetzrul3/SugarchainExplorer" flat round>
         <v-icon left>fab fa-github</v-icon>GitHub
       </v-btn>
       <v-flex py-3 text-xs-center xs12 class="accent--text">
-        VergeExplorer
+        Sugarchain Explorer, Forked from VergeExplorer
         <v-icon small>fa fa-copyright</v-icon>&nbsp;2020
       </v-flex>
     </v-layout>
@@ -71,7 +71,7 @@ export default {
     publicPath: process.env.BASE_URL,
     contactDialog: false,
     donationsDialog: false,
-    qrlink: `https://chart.googleapis.com/chart?cht=qr&chl=DEHYYiNA4fb7h59DGPyrDNNoRRF5ZtMmy9&chs=256x256&chld=L%7C0`
+    qrlink: `https://chart.googleapis.com/chart?cht=qr&chl=sugar1qr3c2c9cqht8jgmyh8h7g6r0dfuztmdeg7nh367&chs=256x256&chld=L%7C0`
   })
 };
 </script>

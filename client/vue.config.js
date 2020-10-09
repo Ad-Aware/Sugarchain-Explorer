@@ -13,8 +13,8 @@ if (process.env.VUE_APP_API_DEV_URL) {
 module.exports = {
   devServer: {
     disableHostCheck: true,
-    host: '0.0.0.0',
-    port: 8080,
+    host: '127.0.0.1',
+    port: 6712,
     proxy: {
       '^/api': {
         target: devURL,

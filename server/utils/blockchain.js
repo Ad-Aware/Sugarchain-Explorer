@@ -14,7 +14,7 @@ const VIN = 'vin',
 const blockchain = {
     hashRegExp: /^([A-Fa-f0-9]{64})$/,
     intRegExp: /^([0-9]{1,18})$/,
-    addressRegExp: /^([A-Za-z0-9]{34})$/,
+    addressRegExp: /^([A-Za-z0-9]{34,45})$/,
 
     isHash(string) {
         return this.hashRegExp.test(string);
