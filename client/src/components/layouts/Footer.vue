@@ -20,7 +20,7 @@
           This website was built from scratch. Source code is available on
           <a
             alt="GitHub"
-            href="https://github.com/Nugetzrul3/SugarchainExplorer"
+            href="https://github.com/sugarchain-project/Sugarchain-Explorer"
           >GitHub</a>. Donations are not necesarry but are greatly appreciated. Donations keep this website online. All donations are non-refundable. To show support to the original developers you can use their Binance exchange referral link below. If you want to show support for Sugarchain, consider donating to the address below!
         </v-card-text>
         <v-card-text class="subheading text-xs-center">SUGAR ({{ $CURRENCY }})</v-card-text>
@@ -54,7 +54,7 @@
       <v-btn flat round @click.stop="donationsDialog = true">
         <v-icon left small>fas fa-hand-holding-usd</v-icon>Donations
       </v-btn>
-      <v-btn href="https://github.com/Nugetzrul3/SugarchainExplorer" flat round>
+      <v-btn href="https://github.com/sugarchain-project/Sugarchain-Explorer" flat round>
         <v-icon left>fab fa-github</v-icon>GitHub
       </v-btn>
       <v-flex py-3 text-xs-center xs12 class="accent--text">
